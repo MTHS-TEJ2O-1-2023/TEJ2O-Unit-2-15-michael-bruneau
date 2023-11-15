@@ -18,15 +18,14 @@ input.onButtonPressed(Button.A, function () {
   xAxis = 0
   yAxis = 0
   sprite = game.createSprite(xAxis, yAxis)
-  while if (xAxis <= 4)
+  while (yAxis <= 3) {
+    xAxis = 0
+    while (xAxis <= 4) {
       basic.pause(500)
-      sprite.set(LedSpriteProperty.X, xAxis)
-      sprite.set(LedSpriteProperty.Y, yAxis)
+      sprite.move(1)
       xAxis = xAxis + 1
-    } else {
-      basic.pause(500)
-      sprite.set(LedSpriteProperty.X, xAxis)
-      sprite.set(LedSpriteProperty.Y, yAxis)
-      yAxis = yAxis + 1
     }
+  sprite.turn(Direction.Right, 90)
+  yAxis = yAxis + 1
+  }
 })
