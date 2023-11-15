@@ -25,7 +25,7 @@ input.onButtonPressed(Button.A, function () {
       sprite.move(1)
       xAxis = xAxis + 1
     }
-  sprite.turn(Direction.Right, 90)
-  yAxis = yAxis + 1
+    sprite.turn(Direction.Right, 90)
+    yAxis = yAxis + 1
   }
 })
