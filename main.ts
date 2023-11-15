@@ -1,8 +1,9 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: Mr. Coxall
- * Created on: Sep 2020
- * This program ...
+ * Created by: Michael Bruneau
+ * Created on: Nov 2023
+ * This program makes a sprite move in a circle
 */
 
-basic.showString('Hello, World!')
+// setup
+basic.showIcon(IconNames.Happy)
