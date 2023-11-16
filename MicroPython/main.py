@@ -20,16 +20,20 @@ while True:
         while y_axis <= 3:
             while x_axis <= 3:
                 sleep(500)
+                display.clear()
                 display.set_pixel(x_axis, y_axis, 9)
                 x_axis = x_axis + 1
             sleep(500)
+            display.clear()
             display.set_pixel(x_axis, y_axis, 9)
             y_axis = y_axis + 1
         while y_axis >= 0:
             while x_axis >= 1:
                 sleep(500)
+                display.clear()
                 display.set_pixel(x_axis, y_axis, 9)
                 x_axis = x_axis - 1
             sleep(500)
+            display.clear()
             display.set_pixel(x_axis, y_axis, 9)
             y_axis = y_axis - 1
