@@ -15,6 +15,8 @@ display.show(Image.HAPPY)
 while True:
     if button_a.is_pressed():
         display.clear()
+
+        # make LEDs light up in circle
         while y_axis <= 4:
             while x_axis <= 3:
                 sleep(500)
