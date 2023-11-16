@@ -17,7 +17,7 @@ while True:
         display.clear()
 
         # make LEDs light up in circle
-        while y_axis <= 4:
+        while y_axis <= 3:
             while x_axis <= 3:
                 sleep(500)
                 display.set_pixel(x_axis, y_axis, 9)
@@ -32,4 +32,4 @@ while True:
                 x_axis = x_axis - 1
             sleep(500)
             display.set_pixel(x_axis, y_axis, 9)
-            y_axis = y_axis + 1
+            y_axis = y_axis - 1
