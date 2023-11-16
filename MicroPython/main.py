@@ -37,3 +37,10 @@ while True:
             display.clear()
             display.set_pixel(x_axis, y_axis, 9)
             y_axis = y_axis - 1
+
+        # reset
+        sleep(500)
+        display.clear()
+        x_axis = 0
+        y_axis = 0
+        display.show(Image.HAPPY)
