@@ -1,17 +1,56 @@
 <mxfile host="65bd71144e">
     <diagram id="HIP3nbAZw_EuaXWnEj3U" name="Page-1">
-        <mxGraphModel dx="603" dy="541" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1678" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="5" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=0;" parent="1" source="2" target="3" edge="1">
+                <mxCell id="6" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2" target="5">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="2" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="371" y="79" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="70" y="30" width="100" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="Stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="371" y="219" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="70" y="250" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="5" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="display Happy face" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="140" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="On start" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="80" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="60" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="480" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="loopCounter1 = 0&lt;br&gt;loopCounter2 = 0" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="375" y="140" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="loop while loopCounter1 &amp;lt;= 3&amp;nbsp;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="380" y="290" width="130" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="loopCounter2 = 0" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="400" y="510" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="loop while loopCounter2 &amp;lt;= 4" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+                    <mxGeometry x="395" y="660" width="125" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="pause for half a second&lt;br&gt;move one pixel sprite from left to right by one" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+                    <mxGeometry x="296.5" y="830" width="353.5" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="loopCounter2 = loopCounter2 + 1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="423" y="960" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="turn sprite move direction&amp;nbsp; 90 degrees right&lt;br&gt;loopCounter1 = loopCounter1 + 1" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+                    <mxGeometry x="620" y="420" width="100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="pause for half a second&lt;br&gt;clear sprite from screen&lt;br&gt;display happy face" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="335" width="120" height="95" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
