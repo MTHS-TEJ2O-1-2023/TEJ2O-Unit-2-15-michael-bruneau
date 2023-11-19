@@ -24,11 +24,11 @@ input.onButtonPressed(Button.A, function () {
       basic.pause(500)
       sprite.move(1)
       loopCounter2 = loopCounter2 + 1
-      }
+    }
     sprite.turn(Direction.Right, 90)
     loopCounter1 = loopCounter1 + 1
   }
-    basic.pause(500)
-    sprite.delete()
-    basic.showIcon(IconNames.Happy)
+  basic.pause(500)
+  sprite.delete()
+  basic.showIcon(IconNames.Happy)
 })
