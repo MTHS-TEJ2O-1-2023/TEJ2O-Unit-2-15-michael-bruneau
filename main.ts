@@ -7,25 +7,28 @@
 
 // variables
 let sprite: game.LedSprite = null
-let xAxis: number = 0
-let yAxis: number = 0
+let loopCounter1: number = 0
+let loopCounter2: number = 0
 
 // setup
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
   // set x and y axis to 0
-  xAxis = 0
-  yAxis = 0
-  sprite = game.createSprite(xAxis, yAxis)
-  while (yAxis <= 3) {
-    xAxis = 0
-    while (xAxis <= 4) {
+  loopCounter1 = 0
+  loopCounter2 = 0
+  sprite = game.createSprite(loopCounter1, loopCounter2)
+  while (loopCounter1 <= 3) {
+    loopCounter2 = 0
+    while (loopCounter2 <= 4) {
       basic.pause(500)
       sprite.move(1)
-      xAxis = xAxis + 1
-    }
+      loopCounter2 = loopCounter2 + 1
+      }
     sprite.turn(Direction.Right, 90)
-    yAxis = yAxis + 1
+    loopCounter1 = loopCounter1 + 1
   }
+    basic.pause(500)
+    sprite.delete()
+    basic.showIcon(IconNames.Happy)
 })
